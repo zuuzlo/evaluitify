@@ -1,0 +1,4 @@
+//$("#show_subcategory_icon_<%= @category.id %>").removeClass("plus").addClass("minus").children().removeClass("glyphicon-plus-sign").addClass("glyphicon-minus-sign");
+$("a#show_subcategory_icon_<%= @category.id %>.sub_<%= @level %>").replaceWith("<%= j (render partial: '/categories/hide_category', locals: {category: @category, level: @level +1 }) %>");
+$('#subcategories').replaceWith("<%= j (render partial: 'categories/shared/subcategory_paragraph', locals: { category: @category, categories: @categories, level: @level + 1 }) %>");
+$(".sub_<%= @level %>").hide();

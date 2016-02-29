@@ -1,0 +1,3 @@
+$("div#subcategory_<%= @category.id %>").replaceWith($("#subcategories"));
+$(".sub_<%= @level %>").show();
+$("a#show_subcategory_icon_<%= @category.id %>.sub_<%= @level + 1 %>").replaceWith("<%= j (render partial: '/categories/category', locals: {category: @category, level: @level, cat_link: 'false' }) %>");

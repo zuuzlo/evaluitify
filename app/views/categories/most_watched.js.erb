@@ -1,0 +1,2 @@
+$("#items").html("<%= j (render partial: 'items/shared/items_group', locals: { items: @items }) %>");
+$("#page_title").html("<%= j (render partial: 'shared/page_title', locals: {title: @category.name}) %>")

@@ -1,0 +1,5 @@
+.div{:id => "top_category"}
+  Categories:
+  %p
+    = render partial: "categories/category", collection: categories, locals: { categories: @categories, level: 0 }
+  #subcategories

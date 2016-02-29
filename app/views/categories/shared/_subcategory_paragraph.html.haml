@@ -1,0 +1,5 @@
+%div{:id => "subcategory_#{@category.id}"}
+  #{category.name} Subcategories:
+  %p
+    = render partial: "categories/category", collection: categories, locals: { categories: categories, level: level }
+  #subcategories

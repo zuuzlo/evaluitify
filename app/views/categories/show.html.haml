@@ -1,0 +1,11 @@
+.page-header
+  %h1
+    #{@category.name} Watched Items
+.row
+  Categories:
+  %p
+    - Category.top_categories.each do |cat|
+      = link_to most_watched_category_path(cat) do
+        #{cat.name}
+.row
+  = render @items

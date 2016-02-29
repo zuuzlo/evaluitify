@@ -1,0 +1,17 @@
+.l3.s3
+  .thumbnail.item
+    = item_image(item)
+    .caption
+    %h5
+      #{truncate(item.title, :length => 50)}
+    .row
+      .l4.s4
+        #{item.buy_now_price}
+      .l4.s4
+        #{item.watch_count}
+      .l4.s4
+        link
+
+
+
+
